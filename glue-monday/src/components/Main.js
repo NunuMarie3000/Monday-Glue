@@ -42,9 +42,9 @@ export default class Main extends Component {
                   <source src={this.props.audioSource}></source>Your browser does not support the audio tag.
                 </audio>
                 <div className='funsies'>
-                <i class="fa-solid fa-message"></i> 123
-                <i class="fa-solid fa-retweet"></i> 345
-                <i class="fa-solid fa-heart"></i> 732
+                <i class="fa-solid fa-message"></i>123
+                <i class="fa-solid fa-retweet"></i>345
+                <i class="fa-solid fa-heart"></i>732
                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
                 <i class="fa-solid fa-signal"></i>
                 </div>
