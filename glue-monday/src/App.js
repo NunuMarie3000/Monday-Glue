@@ -6,6 +6,8 @@ import Main from './components/Main'
 
 import profilePic from './media/flowerpic.jpg'
 
+import coverPic from './media/savagexcoverpic.jpg'
+
 import audio from './media/paint-me-black-angels.mp3'
 
 import Footer from './components/Footer'
@@ -15,11 +17,10 @@ export default class App extends Component {
     return (
       <>
         <div className='app-container'>
-          {/* <h1>Storm O'Bryant</h1> */}
         <Header/>
-        <Main profilePicture={profilePic} audioSource={audio}/>
-        {/* <Footer/> */}
+        <Main profilePicture={profilePic} audioSource={audio} coverPicture={coverPic}/>
         </div>
+        <Footer/>
       </>
     )
   }

@@ -7,14 +7,19 @@ body{
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin: 5vh 5vw;
+  -moz-box-shadow:    3px 3px 5px 6px rgba(204, 204, 204, 0.486);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(204, 204, 204, 0.486);
+  box-shadow:         3px 3px 5px 6px rgba(204, 204, 204, 0.486);
+  border-radius: 2em/3em;
 }
 
 /* HEADER STYLES */
 .nav-container{
   display: grid;
   grid-column: 1/2;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
+  border: solid 1px rgba(128, 128, 128, 0.263);
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
   background-color: white;
 }
 
@@ -33,37 +38,119 @@ body{
   color: rgb(63, 10, 63);
 }
 .link:hover{
-  background-color: rgba(199, 199, 199, 0.562);
-  color: rgb(143, 33, 143);
+  background-color: pink;
 }
 
 /* MAIN STYLES */
 .main-container{
   display: grid;
   grid-column: 2/4;
-  grid-template-rows: 20px 60px 75px;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
   background-color: white;
+}
+.main-top{
+  display: flex;
+  flex-direction: column;
 }
 
 .username{
-  grid-row: 20px;
-  background-color: aqua;
+  padding: 10px;
+  border-top-right-radius: 2em;
 }
 .cover-pic{
-  grid-row: 60px;
-  background-color: brown;
-}
-.profile{
-  grid-row: 75px;
-  background-color: blue;
+  width: 100%;
+  height: auto;
 }
 
+.main-mid{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
 .profile-pic{
-  width: 200px;
-  height: 200px;
+  width: 10em;
+  height: 10em;
+  border: solid 2px white;
   border-radius: 50%;
-  z-index: 1;
   position: relative;
+  bottom: 75px;
+}
+.follow-container{
+  display: flex;
+  justify-content: space-between;
+}
+.follow{
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 2em / 3em;
+  margin: 10px 60px auto 0;
+}
+.follow:hover{
+  background-color: pink;
+}
+.profile{
+  margin-top: -90px;
+}
+.handle{
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: -10px;
+}
+
+.twitter-navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: solid 2px rgba(128, 128, 128, 0.263);;
+}
+.no-line{
+  text-decoration: none;
+}
+
+.main-bottom{
+  margin-left: 20px;
+}
+.pinned-tweet{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.55);
+}
+/* .tweet-user{
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+}*/
+
+.tweet-main{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.music-tweet{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.tweet-info{
+  display: flex;
+  gap: 10px;
+  margin-top: -15px;
+}
+.tweet-pic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.tweet-content{
+  margin-top: -10px;
+}
+.funsies{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+.footer-container{
+  margin-left: 5vw;
 }
